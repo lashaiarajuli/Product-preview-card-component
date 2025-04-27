@@ -20,21 +20,9 @@ body{
 
 .home{
     display: flex;
-    height: 380px;
-    width: 500px;
-
+    height: 400px;
+    width: 520px;
     border-radius: 15px;
-}
-
-.content{
-    background: #fff;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding:25px;
 }
 
 img{
@@ -42,37 +30,44 @@ img{
     border-bottom-left-radius: 15px;
 }
 
-.price{
+.content{
+    background: #fff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     display: flex;
-    align-items: center;
-    gap: 1em;
-
-    
+    flex-direction: column;
+    justify-content: space-between;
+    padding:25px;
 }
 
 .content h3{
     text-transform: uppercase;
     color: hsl(228, 12%, 48%);
-    font-size: 14px;
-    letter-spacing: 2px;
+    font-size: 13.5px;
+    letter-spacing: 4px;
     font-weight: 500;
 }
 
 .content h1{
     line-height: .9;
-    font-size: 27px;
+    font-size: 30px;
     font-weight: 800;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    gap: 1em;  
 }
 
 .paragraph{
     color: hsl(228, 12%, 48%);
-    font-size: 13px;
-    
+    font-size: 14px;
 }
 
 .price p:nth-child(1){
     color:hsl(158, 36%, 37%);
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 800;
 }
 
@@ -80,11 +75,9 @@ img{
     color:hsl(228, 12%, 48%);
     font-size: 12px;
     text-decoration: line-through;
-    
 }
 
 button{
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,10 +92,10 @@ button{
     cursor: pointer;
 }
 
-button:active{
-    background: hsl(158, 42%, 18%);
-}
-
 button i{
     font-size: 18px;
+}
+
+button:active{
+    background: hsl(158, 42%, 18%);
 }
