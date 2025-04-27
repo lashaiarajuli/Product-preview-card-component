@@ -12,6 +12,7 @@
 body{
     background: hsl(30, 38%, 92%);
     height: 100vh;
+    min-width:320px;
 
     display: flex;
     justify-content: center;
@@ -25,9 +26,13 @@ body{
     border-radius: 15px;
 }
 
-img{
+.home .img_desktop{
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+}
+
+.home .image_mobile{
+    display: none;
 }
 
 .content{
@@ -37,7 +42,7 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding:25px;
+    padding:33px;
 }
 
 .content h3{
@@ -49,7 +54,7 @@ img{
 }
 
 .content h1{
-    line-height: .9;
+    line-height: 1;
     font-size: 32px;
     font-weight: 800;
 }
@@ -62,7 +67,8 @@ img{
 
 .paragraph{
     color: hsl(228, 12%, 48%);
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 .price p:nth-child(1){
@@ -98,4 +104,59 @@ button i{
 
 button:active{
     background: hsl(158, 42%, 18%);
+}
+
+
+/* RESPONSIVE --------------------------------------------------------------------------------------- */
+
+@media(max-width: 590px){
+    .home{
+        flex-direction: column;
+        width: 90%; 
+    }
+
+    .home .image_desktop{
+        display: none;
+    }
+
+    .home .image_mobile{
+        display: block;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+
+    .content{
+        gap: 0.8em;
+        border-radius: 0;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        padding: 20px;
+    }
+
+    .content h1{
+        width: 270px;
+    }
+
+    .content .paragraph{
+        width: 261px;
+    }
+
+    button{
+        width: 55%;
+    }
+
+}
+
+@media(max-width: 375px){
+    button{
+        width: 100%;
+    }
+}
+
+@media(max-width: 330px){
+
+    .home h1{
+        font-size: 25px;
+        width: auto;
+    }
 }
